@@ -95,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EBC746521B18AD30067AF56 /* Build configuration list for PBXNativeTarget "EtherWallet" */;
 			buildPhases = (
+				5EBC746821B19B870067AF56 /* SwiftLint Script */,
 				EA92EA454809C97E37678AEE /* [CP] Check Pods Manifest.lock */,
 				5EBC744F21B18AD00067AF56 /* Sources */,
 				5EBC745021B18AD00067AF56 /* Frameworks */,
@@ -188,6 +189,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherWallet/Pods-EtherWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5EBC746821B19B870067AF56 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/EtherWallet\"\nswiftlint lint --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/EtherWallet\"\nelse\necho \"error: SwiftLint not installed, refer to installation instructions from https://github.com/realm/SwiftLint#installation\"\nexit 1\nfi\n";
 		};
 		EA92EA454809C97E37678AEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
