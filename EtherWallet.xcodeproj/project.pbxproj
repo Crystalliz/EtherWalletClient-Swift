@@ -12,6 +12,9 @@
 		5EBC745C21B18AD00067AF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBC745A21B18AD00067AF56 /* Main.storyboard */; };
 		5EBC745E21B18AD30067AF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBC745D21B18AD30067AF56 /* Assets.xcassets */; };
 		5EBC746121B18AD30067AF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBC745F21B18AD30067AF56 /* LaunchScreen.storyboard */; };
+		813228C221B1B669006685EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 813228C021B1B669006685EB /* Localizable.strings */; };
+		813228C621B1B68C006685EB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813228C421B1B68C006685EB /* Strings.swift */; };
+		813228C721B1B68C006685EB /* AssetsImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813228C521B1B68C006685EB /* AssetsImages.swift */; };
 		9537DD69B154C204BB7553EB /* Pods_EtherWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F6DF67A3188F939A02E4B6 /* Pods_EtherWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,10 @@
 		5EBC746021B18AD30067AF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EBC746221B18AD30067AF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DCADD4E5FCDF10A56C76CF4 /* Pods-EtherWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherWallet/Pods-EtherWallet.release.xcconfig"; sourceTree = "<group>"; };
+		813228C121B1B669006685EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		813228C321B1B66D006685EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		813228C421B1B68C006685EB /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		813228C521B1B68C006685EB /* AssetsImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsImages.swift; sourceTree = "<group>"; };
 		86664D34821951BDA9515C80 /* Pods-EtherWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtherWallet/Pods-EtherWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		A0F6DF67A3188F939A02E4B6 /* Pods_EtherWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,14 +76,41 @@
 		5EBC745521B18AD00067AF56 /* EtherWallet */ = {
 			isa = PBXGroup;
 			children = (
+				813228B521B1B44F006685EB /* Generated */,
+				813228B121B1B39F006685EB /* Resources */,
 				5EBC745621B18AD00067AF56 /* AppDelegate.swift */,
 				5EBC745821B18AD00067AF56 /* ViewController.swift */,
 				5EBC745A21B18AD00067AF56 /* Main.storyboard */,
-				5EBC745D21B18AD30067AF56 /* Assets.xcassets */,
 				5EBC745F21B18AD30067AF56 /* LaunchScreen.storyboard */,
 				5EBC746221B18AD30067AF56 /* Info.plist */,
 			);
 			path = EtherWallet;
+			sourceTree = "<group>";
+		};
+		813228B121B1B39F006685EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC745D21B18AD30067AF56 /* Assets.xcassets */,
+				813228B221B1B3C9006685EB /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		813228B221B1B3C9006685EB /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				813228C021B1B669006685EB /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		813228B521B1B44F006685EB /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				813228C521B1B68C006685EB /* AssetsImages.swift */,
+				813228C421B1B68C006685EB /* Strings.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		ACB5C579B5403A7C734EB8C5 /* Pods */ = {
@@ -101,6 +135,7 @@
 				5EBC745021B18AD00067AF56 /* Frameworks */,
 				5EBC745121B18AD00067AF56 /* Resources */,
 				26186214823D65D6246B4EE7 /* [CP] Embed Pods Frameworks */,
+				813228B021B1B250006685EB /* SwiftGen Script */,
 			);
 			buildRules = (
 			);
@@ -150,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EBC746121B18AD30067AF56 /* LaunchScreen.storyboard in Resources */,
+				813228C221B1B669006685EB /* Localizable.strings in Resources */,
 				5EBC745E21B18AD30067AF56 /* Assets.xcassets in Resources */,
 				5EBC745C21B18AD00067AF56 /* Main.storyboard in Resources */,
 			);
@@ -190,6 +226,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherWallet/Pods-EtherWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+        813228B021B1B250006685EB /* SwiftGen Script */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+            );
+            name = "SwiftGen Script";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "if which swiftgen >/dev/null; then\nswiftgen\nfi\n";
+        };
 		5EBC746821B19B870067AF56 /* SwiftLint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EBC745921B18AD00067AF56 /* ViewController.swift in Sources */,
+				813228C621B1B68C006685EB /* Strings.swift in Sources */,
+				813228C721B1B68C006685EB /* AssetsImages.swift in Sources */,
 				5EBC745721B18AD00067AF56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +315,15 @@
 				5EBC746021B18AD30067AF56 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		813228C021B1B669006685EB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813228C121B1B669006685EB /* Base */,
+				813228C321B1B66D006685EB /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

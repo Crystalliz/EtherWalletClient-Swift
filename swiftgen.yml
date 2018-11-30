@@ -1,0 +1,10 @@
+strings:
+  inputs: EtherWallet/Resources/Strings/Base.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: EtherWallet/Generated/Strings.swift
+xcassets:
+  inputs: EtherWallet/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: EtherWallet/Generated/AssetsImages.swift

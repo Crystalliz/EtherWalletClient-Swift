@@ -16,6 +16,7 @@ def commonPods
     pod 'RxSwift', '4.4.0'
     pod 'RxCocoa', '4.4.0'
     pod 'Swinject', '2.5.0'
+    pod 'SwiftGen', '6.0.2'
 end
 
 target 'EtherWallet' do
