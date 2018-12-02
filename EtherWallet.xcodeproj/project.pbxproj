@@ -12,6 +12,9 @@
 		5EBC745C21B18AD00067AF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBC745A21B18AD00067AF56 /* Main.storyboard */; };
 		5EBC745E21B18AD30067AF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBC745D21B18AD30067AF56 /* Assets.xcassets */; };
 		5EBC746121B18AD30067AF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBC745F21B18AD30067AF56 /* LaunchScreen.storyboard */; };
+		5EBC746C21B2AEC70067AF56 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC746921B2AEC30067AF56 /* CryptoSwift.framework */; };
+		5EBC746D21B2AEC70067AF56 /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC746A21B2AEC70067AF56 /* EthereumKit.framework */; };
+		5EBC746E21B2AEC70067AF56 /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC746B21B2AEC70067AF56 /* CryptoEthereumSwift.framework */; };
 		813228C221B1B669006685EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 813228C021B1B669006685EB /* Localizable.strings */; };
 		813228C621B1B68C006685EB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813228C421B1B68C006685EB /* Strings.swift */; };
 		813228C721B1B68C006685EB /* AssetsImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813228C521B1B68C006685EB /* AssetsImages.swift */; };
@@ -26,6 +29,9 @@
 		5EBC745D21B18AD30067AF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EBC746021B18AD30067AF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EBC746221B18AD30067AF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EBC746921B2AEC30067AF56 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		5EBC746A21B2AEC70067AF56 /* EthereumKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EthereumKit.framework; path = Carthage/Build/iOS/EthereumKit.framework; sourceTree = "<group>"; };
+		5EBC746B21B2AEC70067AF56 /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
 		6DCADD4E5FCDF10A56C76CF4 /* Pods-EtherWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherWallet/Pods-EtherWallet.release.xcconfig"; sourceTree = "<group>"; };
 		813228C121B1B669006685EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		813228C321B1B66D006685EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -40,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EBC746C21B2AEC70067AF56 /* CryptoSwift.framework in Frameworks */,
+				5EBC746D21B2AEC70067AF56 /* EthereumKit.framework in Frameworks */,
+				5EBC746E21B2AEC70067AF56 /* CryptoEthereumSwift.framework in Frameworks */,
 				9537DD69B154C204BB7553EB /* Pods_EtherWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +59,9 @@
 		3CAB2E315CC96C260C67102F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EBC746B21B2AEC70067AF56 /* CryptoEthereumSwift.framework */,
+				5EBC746921B2AEC30067AF56 /* CryptoSwift.framework */,
+				5EBC746A21B2AEC70067AF56 /* EthereumKit.framework */,
 				A0F6DF67A3188F939A02E4B6 /* Pods_EtherWallet.framework */,
 			);
 			name = Frameworks;
@@ -129,13 +141,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EBC746521B18AD30067AF56 /* Build configuration list for PBXNativeTarget "EtherWallet" */;
 			buildPhases = (
+				5EBC746F21B2AF0E0067AF56 /* Carthage Script */,
+				813228B021B1B250006685EB /* SwiftGen Script */,
 				5EBC746821B19B870067AF56 /* SwiftLint Script */,
 				EA92EA454809C97E37678AEE /* [CP] Check Pods Manifest.lock */,
 				5EBC744F21B18AD00067AF56 /* Sources */,
 				5EBC745021B18AD00067AF56 /* Frameworks */,
 				5EBC745121B18AD00067AF56 /* Resources */,
 				26186214823D65D6246B4EE7 /* [CP] Embed Pods Frameworks */,
-				813228B021B1B250006685EB /* SwiftGen Script */,
 			);
 			buildRules = (
 			);
@@ -226,24 +239,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherWallet/Pods-EtherWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-        813228B021B1B250006685EB /* SwiftGen Script */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputFileListPaths = (
-            );
-            inputPaths = (
-            );
-            name = "SwiftGen Script";
-            outputFileListPaths = (
-            );
-            outputPaths = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "if which swiftgen >/dev/null; then\nswiftgen\nfi\n";
-        };
 		5EBC746821B19B870067AF56 /* SwiftLint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +256,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/EtherWallet\"\nswiftlint lint --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/EtherWallet\"\nelse\necho \"error: SwiftLint not installed, refer to installation instructions from https://github.com/realm/SwiftLint#installation\"\nexit 1\nfi\n";
+		};
+		5EBC746F21B2AF0E0067AF56 /* Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/EthereumKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoEthereumSwift.framework",
+			);
+			name = "Carthage Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		813228B021B1B250006685EB /* SwiftGen Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\nswiftgen\nfi\n";
 		};
 		EA92EA454809C97E37678AEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -452,6 +486,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QF9TKHN83N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EtherWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,6 +509,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QF9TKHN83N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EtherWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
