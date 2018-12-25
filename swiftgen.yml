@@ -4,7 +4,7 @@ strings:
     - templateName: structured-swift4
       output: EtherWallet/Generated/Strings.swift
 xcassets:
-  inputs: EtherWallet/Resources/Assets.xcassets
+  inputs: EtherWallet/Resources/Images/Assets.xcassets
   outputs:
     - templateName: swift4
       output: EtherWallet/Generated/AssetsImages.swift
