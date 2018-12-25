@@ -88,13 +88,10 @@
 		5EBC745521B18AD00067AF56 /* EtherWallet */ = {
 			isa = PBXGroup;
 			children = (
+				81EC067F21D2BB00006C3B84 /* Classes */,
 				813228B521B1B44F006685EB /* Generated */,
 				813228B121B1B39F006685EB /* Resources */,
-				5EBC745621B18AD00067AF56 /* AppDelegate.swift */,
-				5EBC745821B18AD00067AF56 /* ViewController.swift */,
-				5EBC745A21B18AD00067AF56 /* Main.storyboard */,
-				5EBC745F21B18AD30067AF56 /* LaunchScreen.storyboard */,
-				5EBC746221B18AD30067AF56 /* Info.plist */,
+				81EC068821D2BBCF006C3B84 /* Supporting Files */,
 			);
 			path = EtherWallet;
 			sourceTree = "<group>";
@@ -102,7 +99,7 @@
 		813228B121B1B39F006685EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5EBC745D21B18AD30067AF56 /* Assets.xcassets */,
+				81EC068721D2BB8E006C3B84 /* Images */,
 				813228B221B1B3C9006685EB /* Strings */,
 			);
 			path = Resources;
@@ -125,6 +122,89 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		81EC067F21D2BB00006C3B84 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				81EC068521D2BB6E006C3B84 /* BusinessLogicLayer */,
+				81EC068321D2BB5F006C3B84 /* CoreLayer */,
+				81EC068221D2BB55006C3B84 /* PresentationLayer */,
+				81EC068121D2BB30006C3B84 /* Flow & Coordinators */,
+				81EC068021D2BB0E006C3B84 /* ApplicationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		81EC068021D2BB0E006C3B84 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC745621B18AD00067AF56 /* AppDelegate.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		81EC068121D2BB30006C3B84 /* Flow & Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Flow & Coordinators";
+			sourceTree = "<group>";
+		};
+		81EC068221D2BB55006C3B84 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC745821B18AD00067AF56 /* ViewController.swift */,
+				81EC068621D2BB7F006C3B84 /* Storyboards */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		81EC068321D2BB5F006C3B84 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				81EC068421D2BB66006C3B84 /* Utilities */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		81EC068421D2BB66006C3B84 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		81EC068521D2BB6E006C3B84 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		81EC068621D2BB7F006C3B84 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC745F21B18AD30067AF56 /* LaunchScreen.storyboard */,
+				5EBC745A21B18AD00067AF56 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		81EC068721D2BB8E006C3B84 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC745D21B18AD30067AF56 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		81EC068821D2BBCF006C3B84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC746221B18AD30067AF56 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		ACB5C579B5403A7C734EB8C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +221,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EBC746521B18AD30067AF56 /* Build configuration list for PBXNativeTarget "EtherWallet" */;
 			buildPhases = (
+				EA92EA454809C97E37678AEE /* [CP] Check Pods Manifest.lock */,
 				5EBC746F21B2AF0E0067AF56 /* Carthage Script */,
 				813228B021B1B250006685EB /* SwiftGen Script */,
 				5EBC746821B19B870067AF56 /* SwiftLint Script */,
-				EA92EA454809C97E37678AEE /* [CP] Check Pods Manifest.lock */,
 				5EBC744F21B18AD00067AF56 /* Sources */,
 				5EBC745021B18AD00067AF56 /* Frameworks */,
 				5EBC745121B18AD00067AF56 /* Resources */,
@@ -490,7 +570,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = EtherWallet/Info.plist;
+				INFOPLIST_FILE = "EtherWallet/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +593,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = EtherWallet/Info.plist;
+				INFOPLIST_FILE = "EtherWallet/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
