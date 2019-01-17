@@ -229,6 +229,7 @@
 				5EBC745021B18AD00067AF56 /* Frameworks */,
 				5EBC745121B18AD00067AF56 /* Resources */,
 				26186214823D65D6246B4EE7 /* [CP] Embed Pods Frameworks */,
+				5ECFA5A721F0D0BA004239AF /* Fabric Script */,
 			);
 			buildRules = (
 			);
@@ -357,6 +358,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		5ECFA5A721F0D0BA004239AF /* Fabric Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 31ea1fb960b5ea97b1a8a9a203a45cd75c227039 4579ae767c59e9e8c9691176ca2e076bbd661f009efa29a4bd2b35b73519ba93\n";
 		};
 		813228B021B1B250006685EB /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -565,6 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = QF9TKHN83N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
